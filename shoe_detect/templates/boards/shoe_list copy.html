@@ -1,0 +1,203 @@
+{% extends "./base.html" %}
+{% block main %}
+{% load static %}
+<main>
+  <div class="container" style="max-width: 125%;">
+    <div class="row blog">
+      <div class="col-md-12">
+        <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+          <ol class="carousel-indicators">
+            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#blogCarousel" data-slide-to="1"></li>
+          </ol>
+
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-3">
+                  <a href="detail/{{ ProdInfoBoard.id }}">
+                    <img src="{{ ProdImgBoard.img_path }}" alt="Image" style="max-width:100%;">
+                  </a>
+                </div>
+                <div class="col-md-3">
+                  <a href="detail/{{ ProdInfoBoard.id }}">
+
+                    <img class="d-block w-100" src="{{ ProdImgBoard.img_path }}" style="width:0.5rem;"
+                      alt="First slide">
+                    <p class="name"
+                      style='color: white; font-size: 2.5rem; font-weight:light; position:relative; bottom:350px; text-align:center; white-space:wrap'>
+                      {{ ProdInfoBoard.name }}</p>
+
+                  </a>
+                </div>
+                <div class="col-md-3">
+                  <a href="detail/{{ ProdInfoBoard.id }}">
+
+                    <img class="d-block w-100" src="{{ ProdImgBoard.img_path }}" style="width:0.65rem;"
+                      alt="First slide">
+                    <p class="name"
+                      style='color: white; font-size: 2.5rem; font-weight:light; position:relative; bottom:350px; text-align:center; white-space:wrap'>
+                      {{ ProdInfoBoard.name }}</p>
+
+                  </a>
+                </div>
+                <div class="col-md-3">
+                  <a href="detail/{{ ProdInfoBoard.id }}">
+
+                    <img class="d-block w-100" src="{{ ProdImgBoard.img_path }}" style="width:0.5rem;"
+                      alt="First slide">
+                    <p class="name"
+                      style='color: white; font-size: 2.5rem; font-weight:light; position:relative; bottom:350px; text-align:center; white-space:wrap'>
+                      {{ ProdInfoBoard.name }}</p>
+
+                  </a>
+                </div>
+
+
+              </div>
+              <!--.row-->
+            </div>
+            <!--.item-->
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-3">
+                    <a href="detail/{{ ProdInfoBoard.id }}">
+
+                      <img class="d-block w-100" src="{{ ProdImgBoard.img_path }}" style="width:0.5rem;"
+                        alt="First slide">
+                      <p class="name"
+                        style='color: white; font-size: 2.5rem; font-weight:light; position:relative; bottom:350px; text-align:center; white-space:wrap'>
+                        {{ ProdInfoBoard.name }}</p>
+
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="detail/{{ ProdInfoBoard.id }}">
+
+                      <img class="d-block w-100" src="{{ ProdImgBoard.img_path }}" style="width:0.5rem;"
+                        alt="First slide">
+                      <p class="name"
+                        style='color: white; font-size: 2.5rem; font-weight:light; position:relative; bottom:350px; text-align:center; white-space:wrap'>
+                        {{ ProdInfoBoard.name }}</p>
+
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="detail/{{ ProdInfoBoard.id }}">
+
+                      <img class="d-block w-100" src="{{ ProdImgBoard.img_path }}" style="width:0.5rem;"
+                        alt="First slide">
+                      <p class="name"
+                        style='color: white; font-size: 2.5rem; font-weight:light; position:relative; bottom:350px; text-align:center; white-space:wrap'>
+                        {{ ProdInfoBoard.name }}</p>
+
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="detail/{{ ProdInfoBoard.id }}">
+
+                      <img class="d-block w-100" src="{{ ProdImgBoard.img_path }}" style="width:0.5rem;"
+                        alt="First slide">
+                      <p class="name"
+                        style='color: white; font-size: 2.5rem; font-weight:light; position:relative; bottom:350px; text-align:center; white-space:wrap'>
+                        {{ ProdInfoBoard.name }}</p>
+
+                    </a>
+                  </div>
+                </div>
+                <!--.row-->
+              </div>
+              <!--.item-->
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-3">
+                    <a href="#">
+                      <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#">
+                      <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#">
+                      <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#">
+                      <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                    </a>
+                  </div>
+                </div>
+                <!--.row-->
+              </div>
+              <!--.item-->
+
+            </div>
+            <!--.carousel-inner-->
+          </div>
+          <!--.Carousel-->
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="mt-5 mb-5">
+        <div class="mb-5" style="justify-content:space-around; align-items:center;">
+          <h1 class="main-title" style='font-weight:bold; color: white; text-align: center'>추천 신발 목록</h1>
+          <p class="lead" style='color: white; position: relative; bottom:170px; text-align: center'>
+            찾고 싶은 신발과 유사한 제품들의 목록입니다.
+          </p>
+        </div>
+
+        <div id="carouselExampleControls" style="position:relative; bottom:300px;" class="carousel slide"
+          data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="detail/{{ ProdInfoBoard.id }}">
+
+                <img class="d-block w-100" src="{{ ProdImgBoard.img_path }}" style="width:0.5rem;" alt="First slide">
+                <p class="name"
+                  style='color: white; font-size: 2.5rem; font-weight:light; position:relative; bottom:350px; text-align:center; white-space:wrap'>
+                  {{ ProdInfoBoard.name }}</p>
+
+              </a>
+            </div>
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="{{ ProdImgBoard.img_path }}" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="..." alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </div>
+      <script>
+        $('#blogCarousel').carousel({
+          interval: 5000
+        });
+      </script>
+</main>
+
+{% endblock %}

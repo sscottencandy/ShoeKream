@@ -1,0 +1,107 @@
+{% extends "./base.html" %}
+
+{% load static %}
+{% block main %}
+
+<head>
+  <!-- <link rel="stylesheet" href="{% static 'bootstrap/example.css' %}" /> -->
+  <link rel="stylesheet" href="{% static 'bootstrap/main_style.css' %}" />
+  <!--이미지 크기, 간격 조정-->
+  <style>
+    {
+      % comment %
+    }
+
+    @import url("https://fonts.googleapis.com/css?family=Lato");
+
+    img {
+      display: block;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Lato, Arial;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body {
+      color: #fff;
+      padding: 55px 25px;
+      background-color: #e74c3c;
+    }
+
+    h1 {
+      font-weight: normal;
+      font-size: 40px;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+
+    h1 span {
+      font-size: 13px;
+      display: block;
+      padding-left: 4px;
+    }
+
+    p {
+      margin-top: 200px;
+    }
+
+    .brand-line {
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #fff;
+      color: transparent;
+    }
+  </style>
+</head>
+
+<main>
+
+  <body>
+    <div class="container">
+
+
+      <div class="mb-5" style="
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 150px;
+      ">
+        <div id="champion_article" style="display: flex; justify-content: space-around">
+          <div id="champ_img"
+            style="flex: 1; position: relative; display: flex; flex-direction: column; align-items: center;">
+
+            <h4 class="brand-line" style="position:relative; font-size: 16.5rem; z-index:-2; bottom:150px;">
+              <span style='font-weight: bold;'>{{ ProdInfoBoards.brand }}</span>
+            </h4>
+
+            <img src="{{ ProdInfoBoards.main_img.img_path }}"
+              style="width: 150%; position: relative; bottom: 600px; z-index: -1;" alt="shoe" />
+          </div>
+
+          <div class="info-list" style="flex: 1; position: relative; padding-left: 80px; ">
+            <h1 class="shoe-name" style="color: white; font-size: 3rem; font-weight: bold; width: 500px;">
+              {{ ProdInfoBoards.name }}
+            </h1>
+            <h4 class="shoe-line" style="color: white; font-size: 1.5rem; margin-top: 30px">
+              가&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp격 : <span style='font-weight: bold;'> {{ ProdInfoBoards.price }} 원</span>
+            </h4>
+            <h4 class="shoe-line" style="color: white; font-size: 1.5rem">
+              발매일 : <span style='font-weight: bold;'>{{ ProdInfoBoards.date_release }}</span>
+            </h4>
+            <h4 class="shoe-line" style="color: white; font-size: 1.5rem">
+              브랜드 : <span style='font-weight: bold;'>{{ ProdInfoBoards.brand }}</span>
+            </h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    </div>
+  </body>
+</main>
+
+{% endblock %}

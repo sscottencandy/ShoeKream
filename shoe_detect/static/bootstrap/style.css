@@ -1,0 +1,27 @@
+*{padding:0;margin:0;}
+body{background-color: #4d67cf;}
+ul,ol{list-style:none}
+a{text-decoration:none;color:#ffffff;font-size:15px}
+nav{width:80%;overflow:hidden;height:80px;background-color:#1b2035;margin:50px auto}
+#nav1{text-align:center}
+#nav1>ul{
+    display:flex;
+    justify-content:space-between;
+}
+#nav1>ul li{
+    float:left;
+    padding:0 30px;
+    line-height:80px;
+    color:#ffffff
+}
+#all_champions{background-color: #ffffff;}
+
+#all_champions img{
+    width:100px;
+}
+
+.champion_img_div{
+    display: flex;
+    width:100px;
+    margin:0px;
+}
